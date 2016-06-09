@@ -1,0 +1,36 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,700);
+body {
+	font-family: 'Raleway', sans-serif;
+}
+p{
+	font-size: 13px;
+	font-weight: blod;	/*tiene solo los valores bold o normal*/
+	font-style: italic; /*cursiva*/
+	text-decoration: underline; /*valores none, underline, overline y line-through*/
+	line-height: 20px; /*interlineado: debe el mismo font-size + 7px*/
+	text-align: center; /*left, right, justify*/ /*NUNCA SE JUSTIFICA TEXTO EN WEB*/
+	font: bold italic 13px/20px 'Raleway'; /*font-weight font-style font-size/line-height font-family --- shot hand --- reemplaza todo lo anterior*/
+}
+
+a{
+	text-decoration: none; /*quita el subrayado a los links*/
+	text-transform: uppercase; /*valores normal, capilized (mayuscula la primera litra de cada palabra), lowercase y uppercase*/
+	color: #000; /*por nombre del color, valor hexa y rgba(10,124,200,0.8)*/
+}
+
+#banner{
+	background-color: #fff;
+	background-image: url(../images/indexbanner-bg2.jpg);
+	background-repeat: no-repeat; /*valores repeat, repeat-x, repeat-y y no-repeat --- por defecto las imagenes se repiten si no ocupan todo el espacio disponible*/ 
+	background-position: center center; /*left center rigth --- top center bottom --- tambien se pueden usar percentajes o pixeles y el punto cero es la punta izquierda superior del contenedor*//*primer valor horizontal y segundo vertical x,y*/
+	background-attachment: scroll; /*valores scroll o fixed --- define el comportamiento de la imagen cuando hago un scroll sobre la pagina*/
+	background: #fff repeat fixed;	
+}
+/* acá comeinza el menu*/
+/*estilo por id (solo se puede referenciar una unica vez en cada pagina)*/
+#menu{
+}
+/*estilo por clase (puede estar muchar veces referenciado en la misma pagina)*/
+.menu-clase{
+
+}
