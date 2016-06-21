@@ -1,0 +1,371 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,700);
+
+/*selector universal*/
+*{
+	box-sizing: border-box;
+	/*descuenta del width y height, lo sumado en padding y border*/
+}
+
+body {
+	font-family: 'Raleway', sans-serif;
+	margin: 0; /*quita el margen del body (de la pagina) --- margin=distanciamiento*/
+	/*
+	margin-top:;
+	margin-right:;
+	margin-bottom:;
+	margin-left:;
+	margin: 20px 30px; (20 es para top y bottom y 30 para right y left)
+	margin: 20px 30px 0px; (20 top, 30 right y left, 0 para bottom)
+	*/
+}
+/*Resets*/
+ul, ol{
+	list-style: none; /*elimina de viñeta*/
+	margin: 0; /*quita el margen de las listas*/
+	/*
+	margin: auto; permite central elemetos horizontalmente --- para que funione el margin: auto; debemos asignarle un tamño a la caja
+	*/
+	padding: 0; /*relleno que tienen las listas --- desde el borde del elemento al centro (no es el margen)*/
+	/*
+	padding-top:;
+	padding-right:;
+	padding-bottom:;
+	padding-left:;
+	*/
+}/*agupacion de selectores*/
+
+figure{
+	margin: 0;
+/*	width: 1
+text-transform: 
+
+	height: 25px;*/
+}
+
+a{
+	text-decoration: none;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: white;
+}
+.main-header{
+	width: 1200px;
+	margin: auto;
+	padding: 20px 0;
+	border: solid 1px red;
+}
+
+.logo{
+	float: left;
+	border: solid 1px green;
+}
+
+.main-nav{
+	float: right;
+	border: solid 1px yellow;
+}
+
+.main-nav a{
+	color: black;
+}
+
+#banner-footer .container .main-nav a{
+	color: white;
+}
+.cleaner{
+	clear: both;
+}
+
+/* selector descendente*/
+.main-nav li{
+	float: left;
+	padding: 8px 0 0 15px;
+
+}
+
+#banner{
+	background: url(../images/indexbanner-bg3.jpg) center top no-repeat;
+	/*tamoño de la imagen-cover: imagen de fondo ocupa todo el area de la cajita que te contiene*/
+	background-size: cover; 
+	border: solid 1px yellow;
+
+}
+
+.container{
+	width: 1200px;
+	margin: auto;
+	border: solid 1px red;
+
+}
+
+.banner-title{
+	font-size: 50px;
+	color: white;
+	padding-top: 120px;
+	margin: 0px;
+}
+
+.banner-text{
+	font-size: 20px;
+	color: white;
+}
+
+.register{
+	background-color: #06b4f2;	
+	/*desplaza el elemento desde donde se encuentra y se desplaza del costado top 30px. tambien podes darle
+	top, right, button, left*/
+	position: relative;
+	top: 30px;
+}
+
+.register input{
+	width: 1000px;
+	height: 60px;
+	font-size: 16px;
+	font-family: inherit;
+}
+
+.register button{
+	width: 193px;
+	height: 60px;
+	border: none;
+	color: white;
+	font-size: 16px;
+	font-family: inherit;
+	background-color: #06b4f2;	
+}
+
+.producto{
+	border: solid 1px green;
+	width: 299px;
+	float: left;
+	padding: 0;
+	text-align: center;
+	margin-top: 70px;
+}
+
+#banner-servicios{
+	text-align: center;
+	border: solid 1px blue;
+	padding-top: 50px; 
+}
+
+#servicios{
+	position: relative;
+	top: 70px;
+}
+.container-servicios{
+	width: 399px;
+	margin: auto;
+	border: solid 1px red;
+	float: left;
+
+}
+
+.servicio-izquierdo{
+	text-align: right;
+}
+
+.servicio-izquierdo li{
+	position: relative;
+	padding-right: 60px;
+	padding-top: 5px;
+}
+
+.servicio-izquierdo img{
+	margin-top: 0px;
+	padding-top: 8px;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+/*.servicio-izquierdo-contenido-texto{
+	width: 320px;
+	float: left;
+}
+
+.servicio-izquierdo-contenido-img{
+	float: left;
+	margin-top: 5px;
+	margin-left: 20px;
+}*/
+
+.servicio-img-telefono{
+	text-align: center;
+}
+
+.servicio-derecho{
+	text-align: left;
+}
+
+.servicio-derecho li{
+	position: relative;
+	padding-left: 60px;
+	padding-top: 5px;
+
+}
+.servicio-derecho img{
+	margin-top: 0px;
+	padding-top: 8px;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+#banner-precios{
+	background: url(../images/pricing-bg.jpg) center top no-repeat;
+	background-size: cover;
+	text-align: center;
+	border: solid 1px blue;	
+}
+
+.titulo-precios{
+	padding-top: 130px;
+	padding-bottom: 10px;
+	margin: 0;
+}
+
+.parrafo-precios{
+	padding-top: 10px;
+	padding-bottom: 155px;
+	margin: 0;
+
+}
+
+.container-precios{
+	width: 1200px;
+	margin: auto;
+	/*height: 300px;*/
+	position: relative;
+	bottom: 80px;
+	border: solid 1px red;
+}
+
+.precios{
+	border: solid 1px grey;
+	width: 259px;
+	float: left;
+	padding: 40px 0 40px 0;
+	text-align: center;
+	background-color: white;
+	margin-right: 20px;
+	margin-left: 20px;
+}
+
+.precios p{
+	margin-top: 0;
+}
+
+.precios sup, h2{
+	margin: 0;
+	padding: 0;
+}
+
+.copyright{
+	float: left;
+	margin: auto;
+	/*padding: 0;*/
+	border: solid 1px green;
+}
+
+#banner-footer-customers{
+	background-color: #334D66;
+	/*tamoño de la imagen-cover: imagen de fondo ocupa todo el area de la cajita que te contiene*/
+	text-align: center;
+	background-size: cover; 
+	border: solid 1px yellow;
+	color: white;
+	padding: 40px 0 40px 0;
+}
+
+#banner-footer-customers span{
+	color: lightblue;
+	font-size: 30px;
+}
+
+#banner-footer{
+	background-color: #001A33;
+	/*tamoño de la imagen-cover: imagen de fondo ocupa todo el area de la cajita que te contiene*/
+	border: solid 1px yellow;
+	color: white;
+	font-size: 10px;
+	padding: 10px 0 10px 0; 
+}
+
+table{
+	border-top-style: solid;
+	border-top-color: grey;
+	text-align: center;
+	margin-left: 42px;
+}
+
+.td-derecho{
+	color: red;
+	text-align: right;
+	width: 60px;
+}
+
+.td-izquierdo{
+	text-align: center;
+}
+
+.seleccion-plan{
+	width: 180px;
+	margin-top: 30px;
+	padding-top: 15px;
+	padding-bottom: 15px; 
+	border: solid 1px yellow;
+	color: white;
+	background-color: #06b4f2;
+	position: relative;
+	left:40px;
+	border-radius: 10px;
+}
+
+.seleccion-plan a{
+	margin-top: 15px;
+}
+
+/*
+	tamaños
+		ancho - width:;
+		alto - height:;
+
+	modelo de cajas - box model
+	define como se comprota un elmento cuando le aplico estas propiedades:
+		- width
+		- height
+		- padding
+		- border
+			- border-style:; (valores solid, dashed, dotted y double)
+			- border-width:;
+			- border-color:;
+			- border: solid 400px red ; (pueden ir en cualquier orden)(el border-style tiene que ir si o si, si no, no anda)
+		- margin
+		si tengo un width 400px y le agrego un padding 50px, el padding se suma al width y me queda de un ancho de 500px
+		el border tambien suma
+*/
+/*
+nav, h4{
+	text-transform: uppercase;
+	font-weight: bold;
+}
+a{
+	text-decoration: none;
+	text-transform: uppercase;
+
+}
+span{
+	color: blue;
+	font-size: 25px;
+}
+
+p{
+	font-size: 14px;
+}
+h2, h3, h4{
+	font-size: 18;
+}
+
+.select_plan{
+	background-color: blue; */
